@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@android:color/holo_blue_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Android Assignment"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:id="@+id/top"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Body Mass Index(BMI) Calculator"
+        android:layout_below="@id/top"
+        android:id="@+id/bmiclaculator"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Digits To Words Convertor"
+        android:id="@+id/numberswordsconvertor"
+        android:layout_below="@+id/bmiclaculator"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tax Calculator"
+        android:id="@+id/taxcalculator"
+        android:layout_below="@+id/numberswordsconvertor"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vehicle App"
+        android:id="@+id/vehicleapp"
+        android:layout_below="@+id/taxcalculator"/>
+
+</RelativeLayout>

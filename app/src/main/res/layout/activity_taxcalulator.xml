@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Taxcalulator">
+
+    <TextView
+        android:id="@+id/headtax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TAX CALCULATOR"
+        android:textAlignment="center"
+        android:textSize="40dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter salary here"
+            android:textSize="25dp"
+            android:id="@+id/et_salary"
+            android:layout_below="@id/headtax"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="OK"
+            android:id="@+id/btn_ok"
+            android:layout_below="@id/et_salary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Result"
+            android:textSize="50dp"
+            android:id="@+id/tv_result"
+            android:layout_below="@id/btn_ok"/>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumbersToWordsConvertor"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_number"
+        android:text="Enter Your Number"
+        android:textSize="20dp"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_enternumber"
+        android:layout_toRightOf="@id/tv_number"
+        android:textSize="20dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_change"
+        android:layout_below="@id/et_enternumber"
+        android:textSize="30dp"
+        android:text="Change"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:hint="Your Result:"
+        android:layout_height="wrap_content"
+        android:id="@+id/resultnumbertowords"
+        android:layout_below="@id/btn_change"
+        android:textSize="25dp"
+        />
+    <TextView
+        android:layout_width="200dp"
+        android:hint="Result"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_resultnumbertowords"
+        android:layout_below="@+id/btn_change"
+        android:layout_toRightOf="@id/resultnumbertowords"
+        android:textSize="25dp"
+        />
+
+</RelativeLayout>
